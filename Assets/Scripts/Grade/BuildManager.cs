@@ -16,6 +16,7 @@ public class BuildManager : MonoBehaviour
     }
     public GameObject azovTurretPrefab;
     public GameObject mofTurretPrefab;
+    public GameObject tornadoTurretPrefab;
     
     private GameObject turretToBuild;
     public GameObject GetTurretToBuild()

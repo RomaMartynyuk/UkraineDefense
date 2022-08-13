@@ -18,4 +18,8 @@ public class Shop : MonoBehaviour
     {
         buildManager.SetTurretToBuild(buildManager.mofTurretPrefab);
     }
+    public void PurchaseTornado()
+    {
+        buildManager.SetTurretToBuild(buildManager.tornadoTurretPrefab);
+    }
 }
