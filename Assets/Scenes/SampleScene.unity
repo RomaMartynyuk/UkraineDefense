@@ -3424,6 +3424,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 451bbf637e16a2b47927e9253dac1794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  azov:
+    prefab: {fileID: 7887542212857431515, guid: 88cb3f61fe2561c4caf291aa9e4efd73, type: 3}
+    cost: 80
+  tornado:
+    prefab: {fileID: 4971040910528527408, guid: 874ba93f0f856c04083423713c0c8bd8, type: 3}
+    cost: 120
 --- !u!4 &654686767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3191734823374526296, guid: c4874f8a15dfa7347bc38ff1c5bffe93, type: 3}
@@ -10000,6 +10006,7 @@ GameObject:
   - component: {fileID: 1756405385}
   - component: {fileID: 1756405384}
   - component: {fileID: 1756405386}
+  - component: {fileID: 1756405387}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -10052,6 +10059,19 @@ MonoBehaviour:
   azovTurretPrefab: {fileID: 7887542212857431515, guid: 88cb3f61fe2561c4caf291aa9e4efd73, type: 3}
   mofTurretPrefab: {fileID: 7887542212857431515, guid: 08da62dd2c24f144884c93dde2437efd, type: 3}
   tornadoTurretPrefab: {fileID: 4971040910528527408, guid: 874ba93f0f856c04083423713c0c8bd8, type: 3}
+--- !u!114 &1756405387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756405383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a49625ccb092b4cb6069263e7d4a5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 300
 --- !u!1 &1758937078
 GameObject:
   m_ObjectHideFlags: 0
@@ -10681,7 +10701,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 648555209}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: PurchaseTornado
+        m_MethodName: SelectTornado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11192,7 +11212,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 648555209}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: PurchaseAzov
+        m_MethodName: SelectAzov
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBlueprint azov;
+    public TurretBlueprint tornado;
+
     BuildManager buildManager;
 
     private void Start()
     {
         buildManager = BuildManager.instance;
     }
-    public void PurchaseAzov()
+    public void SelectAzov()
     {
-        buildManager.SetTurretToBuild(buildManager.azovTurretPrefab);
+        buildManager.SelectTurretToBuild(azov);
     }
-    public void PurchaseMoF()
+    //public void SelectMoF()
+    //{
+    //    buildManager.SelectTurretToBuild(mof);
+    //}
+    public void SelectTornado()
     {
-        buildManager.SetTurretToBuild(buildManager.mofTurretPrefab);
-    }
-    public void PurchaseTornado()
-    {
-        buildManager.SetTurretToBuild(buildManager.tornadoTurretPrefab);
+        buildManager.SelectTurretToBuild(tornado);
     }
 }
