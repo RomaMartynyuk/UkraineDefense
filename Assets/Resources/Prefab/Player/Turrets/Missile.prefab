@@ -125,6 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06a6e96e79d024d43b3a8ab3ec06b5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 50
   bulletEffect: {fileID: 8845714974490348095, guid: 54846c7355c0c514699af14e2dea7f69, type: 3}
   explosionRadius: 7
