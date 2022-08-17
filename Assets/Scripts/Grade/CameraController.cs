@@ -12,6 +12,11 @@ public class CameraController : MonoBehaviour
     public float scrollSpeed = 5f;
     void Update()
     {
+        if (GameManager.GameIsOver)
+        {
+            this.enabled = false;
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Escape)) { 
             doMovement = !doMovement;
         }

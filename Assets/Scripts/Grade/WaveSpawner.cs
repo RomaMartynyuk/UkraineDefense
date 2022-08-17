@@ -32,6 +32,7 @@ public class WaveSpawner : MonoBehaviour
     {
         Debug.Log("Наближається нова партія ворогів!");
         waveNumber++;
+        PlayerStats.rounds++;
 
         for (int i = 0; i < waveNumber; i++)
         {
