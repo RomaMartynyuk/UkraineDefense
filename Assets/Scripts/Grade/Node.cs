@@ -11,8 +11,13 @@ public class Node : MonoBehaviour
 
     public Vector3 positionOffset;
 
-    [Header("Optional")]
+    [HideInInspector]
     public GameObject turret;
+    [HideInInspector]
+    public TurretBlueprint turretBlueprint;
+    [HideInInspector]
+    public bool isUpgraded = false;
+
 
     private Renderer rend;
 
@@ -42,7 +47,46 @@ public class Node : MonoBehaviour
         if (!buildManager.CanBuild)
             return;
 
-        buildManager.BuildTurretOn(this);
+        BuildTurret(buildManager.GetTurretToBlueprint());
+    }
+    void BuildTurret(TurretBlueprint blueprint)
+    {
+        if (PlayerStats.money < blueprint.cost)
+        {
+            Debug.Log("Нема грошей!");
+            return;
+        }
+        PlayerStats.money -= blueprint.cost;
+        GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        turretBlueprint = blueprint;
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 3f);
+
+        Debug.Log("Залишилось коштів: " + PlayerStats.money);
+    }
+    public void UpgradeTurret()
+    {
+        if (PlayerStats.money < turretBlueprint.upgradeCost)
+        {
+            Debug.Log("Нема грошей!");
+            return;
+        }
+        PlayerStats.money -= turretBlueprint.upgradeCost;
+        //Знищується стара моделька
+        Destroy(turret);
+        //Будується нова
+        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 3f);
+
+        isUpgraded = true;
+
+        Debug.Log("Залишилось коштів: " + PlayerStats.money);
     }
     private void OnMouseEnter()
     {
