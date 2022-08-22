@@ -3961,8 +3961,8 @@ MonoBehaviour:
   tornado:
     prefab: {fileID: 4971040910528527408, guid: 874ba93f0f856c04083423713c0c8bd8, type: 3}
     cost: 120
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 4971040910528527408, guid: b789fed20b46931408e17b0610e48120, type: 3}
+    upgradeCost: 180
 --- !u!4 &654686767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3191734823374526296, guid: c4874f8a15dfa7347bc38ff1c5bffe93, type: 3}
@@ -4237,6 +4237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1393623944}
+  sellAmount: {fileID: 1268916506}
   upgradeCost: {fileID: 70017706}
   upgradeButton: {fileID: 566557500}
 --- !u!1001 &699919804
@@ -6494,7 +6495,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1005013187}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 696933859}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1005013187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8285,7 +8298,7 @@ GameObject:
   - component: {fileID: 1268916507}
   - component: {fileID: 1268916506}
   m_Layer: 0
-  m_Name: Cost
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11893,6 +11906,7 @@ MonoBehaviour:
   mofTurretPrefab: {fileID: 7887542212857431515, guid: 08da62dd2c24f144884c93dde2437efd, type: 3}
   tornadoTurretPrefab: {fileID: 4971040910528527408, guid: 874ba93f0f856c04083423713c0c8bd8, type: 3}
   buildEffect: {fileID: 5798131982695280737, guid: 5e53bba895ccf7f42804a11c2c59a05d, type: 3}
+  sellEffect: {fileID: 5798131982695280737, guid: 2add4cf505d8476468673729de4d1f5b, type: 3}
   nodeUI: {fileID: 696933859}
 --- !u!114 &1756405387
 MonoBehaviour:

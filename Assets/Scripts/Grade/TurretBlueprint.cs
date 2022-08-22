@@ -12,4 +12,9 @@ public class TurretBlueprint
     [Header("Second level")]
     public GameObject upgradedPrefab;
     public int upgradeCost;
+
+    public int GetSellAmount()
+    {
+        return cost / 2;
+    }
 }

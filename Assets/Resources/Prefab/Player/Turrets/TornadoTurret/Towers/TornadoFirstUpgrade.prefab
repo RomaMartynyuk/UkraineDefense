@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4971040910528527411}
   - component: {fileID: 4971040910528527415}
   m_Layer: 0
-  m_Name: MissileLauncher
+  m_Name: TornadoFirstUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ Transform:
   m_GameObject: {fileID: 4971040910528527408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.0324326, y: 1.3287868, z: -15.357986}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 4971040909371670439}
   m_Father: {fileID: 0}
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 10
   enemyTag: Enemy
-  bulletPrefab: {fileID: 8399302899131172132, guid: 0567f626596fba94290af9917acee824, type: 3}
+  bulletPrefab: {fileID: 8399302899131172132, guid: e271b4b6e3d99134ebcdc3828cf9163d, type: 3}
   firepoint: {fileID: 4971040911217028064}
   fireRate: 0.25
   range: 30
