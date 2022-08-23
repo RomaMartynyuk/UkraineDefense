@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorialEnemy : MonoBehaviour
 {
     public float speed = 10f;
 
-    public int health = 10;
+    public float startHealth = 10f;
+    private float health;
 
     public int moneyGain;
 
@@ -15,13 +17,20 @@ public class TutorialEnemy : MonoBehaviour
     private Transform target;
     private int wavePointIndex = 0;
 
+    [Header("Unity Stuff")]
+    public Image healthBar;
+
     private void Start()
     {
         target = Waypoints.points[0];
+        health = startHealth;
     }
     public void TakeDamage(int amount)
     {
         health -= amount;
+
+        healthBar.fillAmount = health / startHealth;
+
         if (health <= 0)
         {
             Die();
