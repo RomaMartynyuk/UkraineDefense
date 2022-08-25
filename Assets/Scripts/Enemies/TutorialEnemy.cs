@@ -42,6 +42,8 @@ public class TutorialEnemy : MonoBehaviour
 
         GameObject deathEffectEnemy = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(deathEffectEnemy, 2f);
+
+        WaveSpawner.enemiesAlive--;
         
         Destroy(gameObject);
     }
@@ -68,6 +70,7 @@ public class TutorialEnemy : MonoBehaviour
     void EndPath()
     {
         PlayerStats.lives--;
+        WaveSpawner.enemiesAlive--;
         Destroy(gameObject);
     }
 }
