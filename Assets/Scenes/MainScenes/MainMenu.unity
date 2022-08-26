@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3f37fec7290164b851b747f2191194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: MainLevel
+  levelToLoad: LevelSelector
   sceneFader: {fileID: 1810222378}
 --- !u!4 &1734167059
 Transform:
