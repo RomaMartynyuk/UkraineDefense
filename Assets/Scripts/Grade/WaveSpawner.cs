@@ -16,6 +16,8 @@ public class WaveSpawner : MonoBehaviour
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
 
+    public GameManager gameManager;
+
     private int waveNumber = 0;
 
     private void Update()
@@ -36,11 +38,11 @@ public class WaveSpawner : MonoBehaviour
     }
     IEnumerator SpawnWave()
     {
-        Debug.Log("Наближається нова партія ворогів!");
-        
         PlayerStats.rounds++;
 
         Wave wave = waves[waveNumber];
+
+        enemiesAlive = wave.count;
 
         for (int i = 0; i < wave.count; i++)
         {
@@ -48,15 +50,14 @@ public class WaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(1f / wave.rate);
         }
         waveNumber++;
-        if(waveNumber == waves.Length)
+        if(waveNumber == waves.Length && enemiesAlive <= 0)
         {
-            Debug.Log("Гру виграно");
+            gameManager.WinLevel();
             this.enabled = false;
         }
     }
     void SpawnEnemy(GameObject enemy)
     {
         Instantiate(enemy, spawn.position, spawn.rotation);
-        enemiesAlive++;
     }
 }

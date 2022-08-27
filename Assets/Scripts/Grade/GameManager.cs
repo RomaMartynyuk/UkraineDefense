@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     public static bool GameIsOver;
 
     public GameObject gameOverUI;
+
+    public int levelToUnlock = 2;
+
     private void Start()
     {
         GameIsOver = false;
@@ -24,5 +27,11 @@ public class GameManager : MonoBehaviour
     {
         GameIsOver = true;
         gameOverUI.SetActive(true);
+    }
+    public void WinLevel()
+    {
+        Debug.Log("Гру виграно");
+        PlayerPrefs.SetInt("levelReached", levelToUnlock);
+        
     }
 }

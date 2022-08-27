@@ -12822,7 +12822,8 @@ MonoBehaviour:
     rate: 2
   spawn: {fileID: 962905390}
   waveCountdown: {fileID: 550847686}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 5
+  gameManager: {fileID: 1756405388}
 --- !u!4 &1756405385
 Transform:
   m_ObjectHideFlags: 0
@@ -12882,6 +12883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1541755144}
+  levelToUnlock: 2
 --- !u!114 &1756405389
 MonoBehaviour:
   m_ObjectHideFlags: 0
