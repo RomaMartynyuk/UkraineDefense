@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static bool GameIsOver;
 
-    public GameObject gameOverUI;
+    [SerializeField] GameObject gameOverUI;
+    [SerializeField] GameObject levelCompleteUI;
 
     public int levelToUnlock = 2;
 
@@ -30,8 +31,8 @@ public class GameManager : MonoBehaviour
     }
     public void WinLevel()
     {
-        Debug.Log("Гру виграно");
+        GameIsOver = true;
         PlayerPrefs.SetInt("levelReached", levelToUnlock);
-        
+        levelCompleteUI.SetActive(true);
     }
 }

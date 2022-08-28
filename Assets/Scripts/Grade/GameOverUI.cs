@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class GameOverUI : MonoBehaviour
 {
-    public Text roundOver;
+    [SerializeField] Text roundOver;
+    [SerializeField] Text roundAmount;
+
+    [SerializeField] WaveSpawner waveSpawner;
 
     [SerializeField] private string menuSceneName = "MainMenu";
 
@@ -14,7 +17,8 @@ public class GameOverUI : MonoBehaviour
 
     private void OnEnable()
     {
-        roundOver.text = PlayerStats.rounds.ToString() + "/10";
+        roundOver.text = PlayerStats.rounds.ToString();
+        roundAmount.text = "/" + waveSpawner.waves.Length.ToString();
     }
     public void Retry()
     {
