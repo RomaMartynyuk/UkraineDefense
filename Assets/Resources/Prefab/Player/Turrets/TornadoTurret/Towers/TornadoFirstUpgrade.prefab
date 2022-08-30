@@ -210,6 +210,9 @@ MonoBehaviour:
   enemyTag: Enemy
   bulletPrefab: {fileID: 8399302899131172132, guid: e271b4b6e3d99134ebcdc3828cf9163d, type: 3}
   firepoint: {fileID: 4971040911217028064}
+  nameInUa: "\u0422\u043E\u0440\u043D\u0430\u0434\u043E"
+  nameInEng: Tornado
+  damageFromBullet: 10
   fireRate: 0.25
   range: 30
 --- !u!1 &4971040911217028065

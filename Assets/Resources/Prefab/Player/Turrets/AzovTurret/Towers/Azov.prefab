@@ -94,6 +94,9 @@ MonoBehaviour:
   enemyTag: Enemy
   bulletPrefab: {fileID: 4006839277816326301, guid: fab44f4dfadb58443b7b53a9e5c942fe, type: 3}
   firepoint: {fileID: 7887542211871775444}
+  nameInUa: "\u0410\u0437\u043E\u0432"
+  nameInEng: Azov
+  damageFromBullet: 5
   fireRate: 1
   range: 15
 --- !u!1001 &9211922221980299507

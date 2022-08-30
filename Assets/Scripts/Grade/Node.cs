@@ -98,6 +98,27 @@ public class Node : MonoBehaviour
 
         Debug.Log("Залишилось коштів: " + PlayerStats.money);
     }
+    public string GetName()
+    {
+        if (PlayerPrefs.GetString("language") == "Ua")
+            return turret.GetComponent<Turret>().nameInUa.ToString();
+        if (PlayerPrefs.GetString("language") == "Eng" || PlayerPrefs.GetString("language") == "")
+            return turret.GetComponent<Turret>().nameInEng.ToString();
+        else
+            return "none";
+    }
+    public int GetDamage()
+    {
+        return turret.GetComponent<Turret>().damageFromBullet;
+    }
+    public float GetRange()
+    {
+        return turret.GetComponent<Turret>().range;
+    }
+    public float GetFireRate()
+    {
+        return turret.GetComponent<Turret>().fireRate;
+    }
     private void OnMouseEnter()
     {
         if (EventSystem.current.IsPointerOverGameObject())

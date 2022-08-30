@@ -6,11 +6,20 @@ using UnityEngine.UI;
 public class NodeUI : MonoBehaviour
 {
     public GameObject ui;
+    [SerializeField] GameObject rangeCircle;
+    [SerializeField] GameObject uiInfo;
 
     private Node target;
 
     public Text sellAmount;
 
+    [Header("InfoTurret")]
+    public Text nameTurret;
+    public Text damageText;
+    public Text rangeText;
+    public Text fireRateText;
+
+    [Header("Upgrades")]
     public Text upgradeCost;
     public Button upgradeButton;
     public void SetTarget(Node target)
@@ -31,11 +40,19 @@ public class NodeUI : MonoBehaviour
 
         sellAmount.text = "₴" + target.turretBlueprint.GetSellAmount();
 
+        rangeCircle.transform.localScale = new Vector3(target.GetRange() * 2, target.GetRange() * 2, target.GetRange() * 2);
+
+        InfoDisplayer();
+
+        rangeCircle.SetActive(true);
         ui.SetActive(true);
+        uiInfo.SetActive(true);
     }
     public void Hide()
     {
+        rangeCircle.SetActive(false);
         ui.SetActive(false);
+        uiInfo.SetActive(false);
     }
     public void Upgrade()
     {
@@ -46,5 +63,15 @@ public class NodeUI : MonoBehaviour
     {
         target.SellTurret();
         BuildManager.instance.DeselectNode();
+    }
+    public void InfoDisplayer()
+    {
+        nameTurret.text = target.GetName();
+
+        damageText.text = target.GetDamage().ToString();
+
+        rangeText.text = target.GetRange().ToString();
+
+        fireRateText.text = target.GetFireRate().ToString();
     }
 }

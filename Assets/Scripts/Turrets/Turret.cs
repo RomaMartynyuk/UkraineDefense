@@ -9,9 +9,15 @@ public class Turret : MonoBehaviour
     [Header("Set-up Unity")]
     public float turnSpeed = 10f;
     public string enemyTag = "Enemy";
+   
 
     public GameObject bulletPrefab;
     public Transform firepoint;
+
+    [Header("ForUIInfo")]
+    public string nameInUa;
+    public string nameInEng;
+    public int damageFromBullet;
 
     [Header("Shooting")]
     public float fireRate = 1f;
