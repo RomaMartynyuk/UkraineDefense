@@ -16,9 +16,8 @@ public class Node : MonoBehaviour
     [HideInInspector]
     public TurretBlueprint turretBlueprint;
     [HideInInspector]
-    public bool isUpgraded = false;
 
-
+    public int numberOfLevel = 1;
     private Renderer rend;
 
     BuildManager buildManager;
@@ -69,7 +68,16 @@ public class Node : MonoBehaviour
     }
     public void SellTurret()
     {
-        PlayerStats.money += turretBlueprint.GetSellAmount();
+        if(numberOfLevel == 1)
+            PlayerStats.money += turretBlueprint.GetSellAmount();
+        else if(numberOfLevel == 2)
+            PlayerStats.money += turretBlueprint.GetSellFirstUpgradeAmount();
+        else if(numberOfLevel == 3)
+            PlayerStats.money += turretBlueprint.GetSellSecondUpgradeAmount();
+        else if(numberOfLevel == 4)
+            PlayerStats.money += turretBlueprint.GetSellThirdUpgradeAmount();
+        else if(numberOfLevel == 5)
+            PlayerStats.money += turretBlueprint.GetSellHeroUpgradeAmount();
 
         GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 3f);
@@ -79,24 +87,84 @@ public class Node : MonoBehaviour
     }
     public void UpgradeTurret()
     {
-        if (PlayerStats.money < turretBlueprint.upgradeCost)
+        if (numberOfLevel == 1)
         {
-            Debug.Log("Нема грошей!");
-            return;
+            if (PlayerStats.money < turretBlueprint.firstUpgradeCost)
+            {
+                return;
+            }
+            PlayerStats.money -= turretBlueprint.firstUpgradeCost;
+            //Знищується стара моделька
+            Destroy(turret);
+            //Будується нова
+            GameObject _turret = (GameObject)Instantiate(turretBlueprint.firstUpgradedPrefab, GetBuildPosition(), Quaternion.identity);
+            turret = _turret;
+
+            GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+            Destroy(effect, 3f);
+
+            numberOfLevel = 2;
         }
-        PlayerStats.money -= turretBlueprint.upgradeCost;
-        //Знищується стара моделька
-        Destroy(turret);
-        //Будується нова
-        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
-        turret = _turret;
+        else if(numberOfLevel == 2)
+        {
+            if (PlayerStats.money < turretBlueprint.secondUpgradeCost)
+            {
+                return;
+            }
+            PlayerStats.money -= turretBlueprint.secondUpgradeCost;
+            //Знищується стара моделька
 
-        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
-        Destroy(effect, 3f);
+            Destroy(turret);
+            
+            //Будується нова
+            GameObject _turret = (GameObject)Instantiate(turretBlueprint.secondUpgradedPreFab, GetBuildPosition(), Quaternion.identity);
+            turret = _turret;
 
-        isUpgraded = true;
+            GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+            Destroy(effect, 3f);
 
-        Debug.Log("Залишилось коштів: " + PlayerStats.money);
+            numberOfLevel = 3;
+        }
+        else if(numberOfLevel == 3)
+        {
+            if (PlayerStats.money < turretBlueprint.thirdUpgradeCost)
+            {
+                return;
+            }
+            PlayerStats.money -= turretBlueprint.thirdUpgradeCost;
+            //Знищується стара моделька
+
+            Destroy(turret);
+
+            //Будується нова
+            GameObject _turret = (GameObject)Instantiate(turretBlueprint.thirdUpgradedPreFab, GetBuildPosition(), Quaternion.identity);
+            turret = _turret;
+
+            GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+            Destroy(effect, 3f);
+
+            numberOfLevel = 4;
+        }
+        else if(numberOfLevel == 4)
+        {
+            if (PlayerStats.money < turretBlueprint.HeroCost)
+            {
+                return;
+            }
+            PlayerStats.money -= turretBlueprint.HeroCost;
+            //Знищується стара моделька
+
+            Destroy(turret);
+
+            //Будується нова
+            GameObject _turret = (GameObject)Instantiate(turretBlueprint.HeroPreFab, GetBuildPosition(), Quaternion.identity);
+            turret = _turret;
+
+            GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+            Destroy(effect, 3f);
+
+            numberOfLevel = 5;
+        }
     }
     public string GetName()
     {

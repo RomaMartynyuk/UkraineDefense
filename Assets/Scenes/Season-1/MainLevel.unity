@@ -5145,13 +5145,25 @@ MonoBehaviour:
   azov:
     prefab: {fileID: 7887542212857431515, guid: 88cb3f61fe2561c4caf291aa9e4efd73, type: 3}
     cost: 80
-    upgradedPrefab: {fileID: 7887542212857431515, guid: 2d72fd3ef4d08cb41b942062a457f6a2, type: 3}
-    upgradeCost: 110
+    firstUpgradedPrefab: {fileID: 7887542212857431515, guid: 2d72fd3ef4d08cb41b942062a457f6a2, type: 3}
+    firstUpgradeCost: 110
+    secondUpgradedPreFab: {fileID: 7887542212857431515, guid: 7c9ba19d59f7f39438b026261d4ed6a2, type: 3}
+    secondUpgradeCost: 180
+    thirdUpgradedPreFab: {fileID: 7887542212857431515, guid: ec1de76a2694ad848b58e21681d2af64, type: 3}
+    thirdUpgradeCost: 240
+    HeroPreFab: {fileID: 7887542212857431515, guid: 7e6412f52efaf9e4a85e741f14a98850, type: 3}
+    HeroCost: 500
   tornado:
     prefab: {fileID: 4971040910528527408, guid: 874ba93f0f856c04083423713c0c8bd8, type: 3}
     cost: 120
-    upgradedPrefab: {fileID: 4971040910528527408, guid: b789fed20b46931408e17b0610e48120, type: 3}
-    upgradeCost: 180
+    firstUpgradedPrefab: {fileID: 0}
+    firstUpgradeCost: 0
+    secondUpgradedPreFab: {fileID: 0}
+    secondUpgradeCost: 0
+    thirdUpgradedPreFab: {fileID: 0}
+    thirdUpgradeCost: 0
+    HeroPreFab: {fileID: 0}
+    HeroCost: 0
 --- !u!4 &654686767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3191734823374526296, guid: c4874f8a15dfa7347bc38ff1c5bffe93, type: 3}
@@ -14478,7 +14490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a49625ccb092b4cb6069263e7d4a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 300
+  startMoney: 1200
   startLives: 20
 --- !u!114 &1756405388
 MonoBehaviour:
