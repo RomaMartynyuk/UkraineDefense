@@ -7,12 +7,12 @@ public class Turret : MonoBehaviour
     private Transform target;
 
     [Header("Set-up Unity")]
-    public float turnSpeed = 10f;
-    public string enemyTag = "Enemy";
+    [SerializeField] float turnSpeed = 10f;
+    [SerializeField] string enemyTag = "Enemy";
    
 
-    public GameObject bulletPrefab;
-    public Transform firepoint;
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] Transform firepoint;
 
     [Header("ForUIInfo")]
     public string nameInUa;

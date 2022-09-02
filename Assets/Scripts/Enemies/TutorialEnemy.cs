@@ -5,20 +5,22 @@ using UnityEngine.UI;
 
 public class TutorialEnemy : MonoBehaviour
 {
-    public float speed = 10f;
+    [Header("Enemy Main Stats")]
+    [SerializeField] float speed = 10f;
 
-    public float startHealth = 10f;
+    [SerializeField] float startHealth = 10f;
     private float health;
 
     public int moneyGain;
 
-    public GameObject deathEffect;
+    [Header("PreFabs")]
+    [SerializeField] GameObject deathEffect;
 
     private Transform target;
     private int wavePointIndex = 0;
 
     [Header("Unity Stuff")]
-    public Image healthBar;
+    [SerializeField] Image healthBar;
 
     private bool isDead = false;
 

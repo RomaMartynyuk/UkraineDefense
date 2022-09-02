@@ -5,11 +5,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private Transform target;
-
-    public float speed = 50f;
-    public int damage = 5;
-    public GameObject bulletEffect;
-    public float explosionRadius = 0f;
+    [Header("Main properties")]
+    [SerializeField] float speed = 50f;
+    [SerializeField] int damage = 5;
+    [SerializeField] GameObject bulletEffect;
+    [Header("For special types")]
+    [SerializeField] float explosionRadius = 0f;
     public void Seek(Transform _target)
     {
         target = _target;
