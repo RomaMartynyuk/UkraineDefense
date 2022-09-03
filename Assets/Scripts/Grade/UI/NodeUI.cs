@@ -5,23 +5,23 @@ using UnityEngine.UI;
 
 public class NodeUI : MonoBehaviour
 {
-    public GameObject ui;
+    [SerializeField] GameObject ui;
     [SerializeField] GameObject rangeCircle;
     [SerializeField] GameObject uiInfo;
 
     private Node target;
 
-    public Text sellAmount;
+    [SerializeField] Text sellAmount;
 
     [Header("InfoTurret")]
-    public Text nameTurret;
-    public Text damageText;
-    public Text rangeText;
-    public Text fireRateText;
+    [SerializeField] Text nameTurret;
+    [SerializeField] Text damageText;
+    [SerializeField] Text rangeText;
+    [SerializeField] Text fireRateText;
 
     [Header("Upgrades")]
-    public Text upgradeCost;
-    public Button upgradeButton;
+    [SerializeField] Text upgradeCost;
+    [SerializeField] Button upgradeButton;
     public void SetTarget(Node target)
     {
         this.target = target;

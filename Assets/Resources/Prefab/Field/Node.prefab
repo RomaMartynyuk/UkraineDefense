@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3956715684948033869}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalScale: {x: 2.5, y: 1, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,3 +112,15 @@ MonoBehaviour:
   notEnoughMoneyColor: {r: 1, g: 0.1745283, b: 0.1745283, a: 0}
   positionOffset: {x: 0, y: 1.25, z: 0}
   turret: {fileID: 7887542212857431515, guid: 88cb3f61fe2561c4caf291aa9e4efd73, type: 3}
+  turretBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    firstUpgradedPrefab: {fileID: 0}
+    firstUpgradeCost: 0
+    secondUpgradedPreFab: {fileID: 0}
+    secondUpgradeCost: 0
+    thirdUpgradedPreFab: {fileID: 0}
+    thirdUpgradeCost: 0
+    HeroPreFab: {fileID: 0}
+    HeroCost: 0
+  numberOfLevel: 1

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MoneyUI : MonoBehaviour
 {
-    public Text moneyText;
+    [SerializeField] Text moneyText;
     private void Update()
     {
         moneyText.text = "₴" + PlayerStats.money.ToString();
