@@ -24,11 +24,13 @@ public class PauseMenu : MonoBehaviour
     public void Retry()
     {
         Toggle();
+        Time.timeScale = 1f;
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }
     public void GoToMenu()
     {
         Toggle();
+        Time.timeScale = 1f;
         sceneFader.FadeTo(menuSceneName);
     }
 }
