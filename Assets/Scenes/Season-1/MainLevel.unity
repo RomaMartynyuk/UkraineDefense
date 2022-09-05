@@ -14432,17 +14432,24 @@ MonoBehaviour:
     - {fileID: 6398749036385250468, guid: 1d8f1ddeb54987743afdafd18f8b8326, type: 3}
     count: 0a00000002000000
     rate: 2
-  - enemy: []
-    count: 
+  - enemy:
+    - {fileID: 6398749036385250468, guid: d745789dddf70de438eb781f50fe8c01, type: 3}
+    count: 19000000
     rate: 2
-  - enemy: []
-    count: 
+  - enemy:
+    - {fileID: 6398749036385250468, guid: 1d8f1ddeb54987743afdafd18f8b8326, type: 3}
+    count: 07000000
     rate: 1
-  - enemy: []
-    count: 
+  - enemy:
+    - {fileID: 6398749036385250468, guid: 1d8f1ddeb54987743afdafd18f8b8326, type: 3}
+    - {fileID: 6398749036385250468, guid: d745789dddf70de438eb781f50fe8c01, type: 3}
+    count: 0400000014000000
     rate: 2
-  - enemy: []
-    count: 
+  - enemy:
+    - {fileID: 6398749036385250468, guid: d745789dddf70de438eb781f50fe8c01, type: 3}
+    - {fileID: 6398749036385250468, guid: 1d8f1ddeb54987743afdafd18f8b8326, type: 3}
+    - {fileID: 6398749036385250468, guid: d745789dddf70de438eb781f50fe8c01, type: 3}
+    count: 14000000050000000f000000
     rate: 2
   spawn: {fileID: 962905390}
   waveCountdown: {fileID: 550847686}
@@ -14523,6 +14530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 1558982791}
   sceneFader: {fileID: 925864822}
+  waveSpawner: {fileID: 1756405384}
   menuSceneName: MainMenu
 --- !u!1 &1758937078
 GameObject:

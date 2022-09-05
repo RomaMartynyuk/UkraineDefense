@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject ui;
     [SerializeField] private SceneFader sceneFader;
-
+    [SerializeField] private WaveSpawner waveSpawner;
     [SerializeField] private string menuSceneName = "MainMenu"; 
     public void Toggle()
     {
@@ -24,13 +24,15 @@ public class PauseMenu : MonoBehaviour
     public void Retry()
     {
         Toggle();
-        Time.timeScale = 1f;
+        waveSpawner.enabled = false;
+        WaveSpawner.enemiesAlive = 0;
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }
     public void GoToMenu()
     {
         Toggle();
-        Time.timeScale = 1f;
+        waveSpawner.enabled = false;
+        WaveSpawner.enemiesAlive = 0;
         sceneFader.FadeTo(menuSceneName);
     }
 }
