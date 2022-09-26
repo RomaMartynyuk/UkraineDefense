@@ -8,6 +8,6 @@ public class MoneyUI : MonoBehaviour
     [SerializeField] Text moneyText;
     private void Update()
     {
-        moneyText.text = "₴" + PlayerStats.money.ToString();
+        moneyText.text = PlayerStats.money.ToString();
     }
 }
