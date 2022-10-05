@@ -18,11 +18,14 @@ public class WaveSpawner : MonoBehaviour
 
     public GameManager gameManager;
 
+    [HideInInspector] public static int amountWaves;
+
     private int waveNumber = 0;
 
     private void Start()
     {
         enemiesAlive = 0;
+        amountWaves = waves.Length; 
     }
     private void Update()
     {
