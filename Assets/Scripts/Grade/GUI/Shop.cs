@@ -6,6 +6,7 @@ public class Shop : MonoBehaviour
 {
     public TurretBlueprint azov;
     public TurretBlueprint tornado;
+    public TurretBlueprint zsu;
 
     BuildManager buildManager;
 
@@ -17,10 +18,10 @@ public class Shop : MonoBehaviour
     {
         buildManager.SelectTurretToBuild(azov);
     }
-    //public void SelectMoF()
-    //{
-    //    buildManager.SelectTurretToBuild(mof);
-    //}
+    public void SelectZSU()
+    {
+        buildManager.SelectTurretToBuild(zsu);
+    }
     public void SelectTornado()
     {
         buildManager.SelectTurretToBuild(tornado);

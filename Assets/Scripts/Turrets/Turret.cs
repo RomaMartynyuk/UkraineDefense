@@ -24,6 +24,10 @@ public class Turret : MonoBehaviour
     private float fireCountdown = 0f;
     public float range = 15f;
 
+    [Header("Animation")]
+    public Animator animator;
+    public Animator gunanim;
+
     private void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
@@ -78,6 +82,8 @@ public class Turret : MonoBehaviour
     }
     void Shoot()
     {
+        animator.SetTrigger("ShootAnim");
+        gunanim.SetTrigger("GunAnim");
         GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
