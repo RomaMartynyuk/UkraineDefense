@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: 357d116769cbb5f489f17ece9f42f8bd
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 4227435747792001867
+    second: Plane.004|BayraktarFlight
+  - first:
+      74: 5326543885355358974
+    second: Plane.004|Cube.001Action
+  - first:
+      74: 3094043387232981395
+    second: Plane.004|GunShoot
+  - first:
+      74: 5680132677900865509
+    second: Plane.004|GunShoot.001
+  - first:
+      74: -6214880886141506197
+    second: Plane.004|Plane.004Action.001
+  - first:
+      74: -1679740327634428950
+    second: Plane.004|Plane.004Action.002
+  - first:
+      74: -474727546243633733
+    second: Plane.003|BayraktarFlight
+  - first:
+      74: -4242351171505817681
+    second: Plane.003|Cube.001Action
+  - first:
+      74: 2818834249996041105
+    second: Plane.003|GunShoot
+  - first:
+      74: -7841652415504349674
+    second: Plane.003|GunShoot.001
+  - first:
+      74: 5945105006899684226
+    second: Plane.003|Plane.004Action.001
+  - first:
+      74: 4566609847083914584
+    second: Plane.003|Plane.004Action.002
+  - first:
+      74: -7266248001506183772
+    second: Plane.006|BayraktarFlight
+  - first:
+      74: 2034323553191346607
+    second: Plane.006|Cube.001Action
+  - first:
+      74: -399880327903036846
+    second: Plane.006|GunShoot
+  - first:
+      74: 908217976077853828
+    second: Plane.006|GunShoot.001
+  - first:
+      74: -4289744464564457479
+    second: Plane.006|Plane.004Action.001
+  - first:
+      74: -4018112247867640523
+    second: Plane.006|Plane.004Action.002
+  - first:
+      74: 1548780531086282488
+    second: Plane.007|BayraktarFlight
+  - first:
+      74: 2205542989716698274
+    second: Plane.007|Cube.001Action
+  - first:
+      74: -7072728681817327464
+    second: Plane.007|GunShoot
+  - first:
+      74: 5212075600942886566
+    second: Plane.007|GunShoot.001
+  - first:
+      74: -5005480627242521072
+    second: Plane.007|Plane.004Action.001
+  - first:
+      74: 7725851874181584646
+    second: Plane.007|Plane.004Action.002
+  - first:
+      74: -5477472330426985856
+    second: Plane.008|BayraktarFlight
+  - first:
+      74: 4765003959363970069
+    second: Plane.008|Cube.001Action
+  - first:
+      74: 7284016509138308346
+    second: Plane.008|GunShoot
+  - first:
+      74: 7164738038820683466
+    second: Plane.008|GunShoot.001
+  - first:
+      74: -8928165012627667861
+    second: Plane.008|Plane.004Action.001
+  - first:
+      74: -257072815278700888
+    second: Plane.008|Plane.004Action.002
+  - first:
+      74: -4206965145326679284
+    second: Cube.001|BayraktarFlight
+  - first:
+      74: -8515560403302317629
+    second: Cube.001|Cube.001Action
+  - first:
+      74: 624323367187035153
+    second: Cube.001|GunShoot
+  - first:
+      74: -8511135990855740343
+    second: Cube.001|GunShoot.001
+  - first:
+      74: 5307269332416923342
+    second: Cube.001|Plane.004Action.001
+  - first:
+      74: 851415885424586941
+    second: Cube.001|Plane.004Action.002
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Cube.001|Plane.004Action.001
+      takeName: Cube.001|BayraktarFlight
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

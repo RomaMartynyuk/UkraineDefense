@@ -30,7 +30,7 @@ public class Turret : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        InvokeRepeating("UpdateTarget", 1f, 0.5f);
     }
     void UpdateTarget()
     {

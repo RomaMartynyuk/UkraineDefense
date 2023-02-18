@@ -5,20 +5,28 @@ using UnityEngine;
 public class BayraktarSpawn : MonoBehaviour
 {
     [SerializeField] GameObject bayraktarPreFab;
-    private bool canSpawn = true;
+    public bool canSpawn = true;
     public Transform spawnTransform;
     public Transform targetTransform;
     [SerializeField] private float timeToSpawn = 30;
     private float realTimeSpawn;
+    private void Start()
+    {
+        bayraktarPreFab.transform.position = spawnTransform.position;
+    }
     private void Update()
     {
-        realTimeSpawn -= Time.deltaTime;
+        if(!canSpawn)
+            realTimeSpawn -= Time.deltaTime;
+        if (realTimeSpawn <= 0)
+            canSpawn = true;
     }
     public void SpawnBayraktar()
     {
         if (canSpawn)
         {
             Instantiate(bayraktarPreFab);
+            realTimeSpawn = timeToSpawn;
             canSpawn = false;
         }
         if(!canSpawn)

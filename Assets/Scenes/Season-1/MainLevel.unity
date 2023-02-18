@@ -11243,13 +11243,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445749657}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 50.4, y: 8, z: 19.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!4 &1446866601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2262592865155241822, guid: 4618bcbdaa1937c46a97bcf25ad4253b, type: 3}
@@ -14203,7 +14203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba79687b58d6a14cbb6cd2c5770ebf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bayraktarPreFab: {fileID: 6317861833387547080, guid: 2df9ca00ab3e7ed459404b98e5d78905, type: 3}
+  bayraktarPreFab: {fileID: 4163202103243662750, guid: c75bb98e9bd6cc249b607df0fe2f2fe2, type: 3}
+  canSpawn: 1
   spawnTransform: {fileID: 1166479580}
   targetTransform: {fileID: 1445749658}
   timeToSpawn: 30
