@@ -4781,6 +4781,17 @@ MonoBehaviour:
     thirdUpgradeCost: 210
     HeroPreFab: {fileID: 0}
     HeroCost: 0
+  rightSector:
+    prefab: {fileID: 3916418388504245810, guid: fafa421f973c7494f9145840a5bb1ecd, type: 3}
+    cost: 40
+    firstUpgradedPrefab: {fileID: 5740037410673019762, guid: a9569dfd04209a54795490ee507bfa78, type: 3}
+    firstUpgradeCost: 80
+    secondUpgradedPreFab: {fileID: 737800296447928118, guid: 6b7b124972d29694394a6c29cc6cc5ca, type: 3}
+    secondUpgradeCost: 120
+    thirdUpgradedPreFab: {fileID: 8042434221858848082, guid: ef850a6316a12a24292e5f470f91c9ee, type: 3}
+    thirdUpgradeCost: 220
+    HeroPreFab: {fileID: 0}
+    HeroCost: 0
 --- !u!4 &654686767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3191734823374526296, guid: c4874f8a15dfa7347bc38ff1c5bffe93, type: 3}
@@ -12914,7 +12925,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1644259484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 648555209}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SelectRightSector
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1644259484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14143,6 +14166,7 @@ MonoBehaviour:
   azovTurretPrefab: {fileID: 7887542212857431515, guid: 88cb3f61fe2561c4caf291aa9e4efd73, type: 3}
   zsuTurretPrefab: {fileID: 1284979552342954573, guid: f6f53a8da85a129419aad091df1e2800, type: 3}
   tornadoTurretPrefab: {fileID: 4971040910528527408, guid: 874ba93f0f856c04083423713c0c8bd8, type: 3}
+  rightSectorTurretPrefab: {fileID: 0}
   buildEffect: {fileID: 5798131982695280737, guid: 5e53bba895ccf7f42804a11c2c59a05d, type: 3}
   sellEffect: {fileID: 5798131982695280737, guid: 2add4cf505d8476468673729de4d1f5b, type: 3}
   nodeUI: {fileID: 696933859}

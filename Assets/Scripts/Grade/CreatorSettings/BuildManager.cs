@@ -17,6 +17,7 @@ public class BuildManager : MonoBehaviour
     public GameObject azovTurretPrefab;
     public GameObject zsuTurretPrefab;
     public GameObject tornadoTurretPrefab;
+    public GameObject rightSectorTurretPrefab;
 
     public GameObject buildEffect;
     public GameObject sellEffect;

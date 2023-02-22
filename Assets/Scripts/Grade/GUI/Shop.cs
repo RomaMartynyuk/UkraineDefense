@@ -7,6 +7,7 @@ public class Shop : MonoBehaviour
     public TurretBlueprint azov;
     public TurretBlueprint tornado;
     public TurretBlueprint zsu;
+    public TurretBlueprint rightSector;
 
     BuildManager buildManager;
 
@@ -25,5 +26,9 @@ public class Shop : MonoBehaviour
     public void SelectTornado()
     {
         buildManager.SelectTurretToBuild(tornado);
+    }
+    public void SelectRightSector()
+    {
+        buildManager.SelectTurretToBuild(rightSector);
     }
 }
