@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 0196c223e53df7c44ba98ba792b807c3
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -7014912648271035856
+    second: "Ko\u015Bci szturmowiec 1.008|BayraktarFlight"
+  - first:
+      74: 3858383645686026726
+    second: "Ko\u015Bci szturmowiec 1.008|GunShoot"
+  - first:
+      74: 4251030888257941570
+    second: "Ko\u015Bci szturmowiec 1.008|GunShoot.001"
+  - first:
+      74: -1520720002995952771
+    second: "Ko\u015Bci szturmowiec 1.008|KostieShoot"
+  - first:
+      74: 4779782474325981786
+    second: "Ko\u015Bci szturmowiec 1.008|KostieShoot.001"
+  - first:
+      74: -3347880290130421591
+    second: "Ko\u015Bci szturmowiec 1.008|KostieShoot.002"
+  - first:
+      74: -3163521864415771640
+    second: "Ko\u015Bci szturmowiec 1.008|KostieShoot.003"
+  - first:
+      74: -3676266215436738727
+    second: "Ko\u015Bci szturmowiec 1.008|KostieShoot.004"
+  - first:
+      74: 6740516175744161137
+    second: "Ko\u015Bci szturmowiec 1.008|KostieShoot.006"
+  - first:
+      74: -7476571610967533053
+    second: "Ko\u015Bci szturmowiec 1.008|PulemetStart"
+  - first:
+      74: 1221159432547549001
+    second: "Ko\u015Bci szturmowiec 1.008|PulemetStartLVL3"
+  - first:
+      74: -2997458746000854350
+    second: "Ko\u015Bci szturmowiec 1.008|PulemetStartLVL3.001"
+  - first:
+      74: -1987642725577439082
+    second: "Ko\u015Bci szturmowiec 1.008|PulemetStartLVL3.002"
+  - first:
+      74: 5841569619132454881
+    second: "Ko\u015Bci szturmowiec 1.008|Sniper"
+  - first:
+      74: -4855240151443617633
+    second: "Ko\u015Bci szturmowiec 1.008|Sniper.001"
+  - first:
+      74: -3615064391744748699
+    second: "Ko\u015Bci szturmowiec 1.008|Sniper.002"
+  - first:
+      74: 4216837424966660867
+    second: "Ko\u015Bci szturmowiec 1.008|Sniper.004"
+  - first:
+      74: 5264042027870680594
+    second: "Ko\u015Bci szturmowiec 1.008|SniperGun"
+  - first:
+      74: -8872767321278541227
+    second: "Ko\u015Bci szturmowiec 1.008|SniperGun.001"
+  - first:
+      74: 377024641686753454
+    second: "Ko\u015Bci szturmowiec 1.008|SniperGun.002"
+  - first:
+      74: -6611965529723376443
+    second: "Ko\u015Bci szturmowiec 1.008|StartMinigan"
+  - first:
+      74: 7861631093079576790
+    second: "Ko\u015Bci szturmowiec 1.008|StartPulemetShoot"
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: "Ko\u015Bci szturmowiec 1.008|PulemetStartLVL3.001"
+      takeName: "Ko\u015Bci szturmowiec 1.008|PulemetStartLVL3.001"
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
