@@ -68,19 +68,27 @@ public class Node : MonoBehaviour
     }
     public void SellTurret()
     {
-        if(numberOfLevel == 1)
-            PlayerStats.money += turretBlueprint.GetSellAmount();
-        else if(numberOfLevel == 2)
-            PlayerStats.money += turretBlueprint.GetSellFirstUpgradeAmount();
-        else if(numberOfLevel == 3)
-            PlayerStats.money += turretBlueprint.GetSellSecondUpgradeAmount();
-        else if(numberOfLevel == 4)
-            PlayerStats.money += turretBlueprint.GetSellThirdUpgradeAmount();
-        else if(numberOfLevel == 5)
-            PlayerStats.money += turretBlueprint.GetSellHeroUpgradeAmount();
-
+        switch (numberOfLevel)
+        {
+            case 1:
+                PlayerStats.money += turretBlueprint.GetSellAmount();
+                break;
+            case 2:
+                PlayerStats.money += turretBlueprint.GetSellFirstUpgradeAmount();
+                break;
+            case 3:
+                PlayerStats.money += turretBlueprint.GetSellSecondUpgradeAmount();
+                break;
+            case 4:
+                PlayerStats.money += turretBlueprint.GetSellThirdUpgradeAmount();
+                break;
+            default:
+                break;
+        }
         GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 3f);
+
+        numberOfLevel = 1;
 
         Destroy(turret);
         turretBlueprint = null;
@@ -144,26 +152,6 @@ public class Node : MonoBehaviour
             Destroy(effect, 3f);
 
             numberOfLevel = 4;
-        }
-        else if(numberOfLevel == 4)
-        {
-            if (PlayerStats.money < turretBlueprint.HeroCost)
-            {
-                return;
-            }
-            PlayerStats.money -= turretBlueprint.HeroCost;
-            //Знищується стара моделька
-
-            Destroy(turret);
-
-            //Будується нова
-            GameObject _turret = (GameObject)Instantiate(turretBlueprint.HeroPreFab, GetBuildPosition(), Quaternion.identity);
-            turret = _turret;
-
-            GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
-            Destroy(effect, 3f);
-
-            numberOfLevel = 5;
         }
     }
     public string GetName()

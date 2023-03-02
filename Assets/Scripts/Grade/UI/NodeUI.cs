@@ -27,35 +27,30 @@ public class NodeUI : MonoBehaviour
         this.target = target;
 
         transform.position = target.GetBuildPosition();
-        if (target.numberOfLevel == 1)
+        switch (target.numberOfLevel)
         {
-            sellAmount.text = "₴" + target.turretBlueprint.GetSellAmount();
-            upgradeCost.text = "₴" + target.turretBlueprint.firstUpgradeCost;
-            upgradeButton.interactable = true;
-        }
-        else if(target.numberOfLevel == 2)
-        {
-            sellAmount.text = "₴" + target.turretBlueprint.GetSellFirstUpgradeAmount();
-            upgradeCost.text = "₴" + target.turretBlueprint.secondUpgradeCost;
-            upgradeButton.interactable = true;
-        }
-        else if(target.numberOfLevel == 3)
-        {
-            sellAmount.text = "₴" + target.turretBlueprint.GetSellSecondUpgradeAmount();
-            upgradeCost.text = "₴" + target.turretBlueprint.thirdUpgradeCost;
-            upgradeButton.interactable = true;
-        }
-        else if(target.numberOfLevel == 4)
-        {
-            sellAmount.text = "₴" + target.turretBlueprint.GetSellThirdUpgradeAmount();
-            upgradeCost.text = "₴" + target.turretBlueprint.HeroCost;
-            upgradeButton.interactable = true;
-        }
-        else
-        {
-            sellAmount.text = "₴" + target.turretBlueprint.GetSellHeroUpgradeAmount();
-            upgradeCost.text = "МАХ";
-            upgradeButton.interactable = false;
+            case 1:
+                sellAmount.text = "₴" + target.turretBlueprint.GetSellAmount();
+                upgradeCost.text = "₴" + target.turretBlueprint.firstUpgradeCost;
+                upgradeButton.interactable = true;
+                break;
+            case 2:
+                sellAmount.text = "₴" + target.turretBlueprint.GetSellFirstUpgradeAmount();
+                upgradeCost.text = "₴" + target.turretBlueprint.secondUpgradeCost;
+                upgradeButton.interactable = true;
+                break;
+            case 3:
+                sellAmount.text = "₴" + target.turretBlueprint.GetSellSecondUpgradeAmount();
+                upgradeCost.text = "₴" + target.turretBlueprint.thirdUpgradeCost;
+                upgradeButton.interactable = true;
+                break;
+            case 4:
+                sellAmount.text = "₴" + target.turretBlueprint.GetSellThirdUpgradeAmount();
+                upgradeCost.text = "MAX";
+                upgradeButton.interactable = false;
+                break;
+            default:
+                break;
         }
 
         rangeCircle.transform.localScale = new Vector3(target.GetRange() * 2, 0, target.GetRange() * 2);

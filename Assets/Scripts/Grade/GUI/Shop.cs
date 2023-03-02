@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
@@ -30,5 +31,9 @@ public class Shop : MonoBehaviour
     public void SelectRightSector()
     {
         buildManager.SelectTurretToBuild(rightSector);
+    }
+    public void Unselect()
+    {
+        buildManager.SelectTurretToBuild(null);
     }
 }

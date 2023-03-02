@@ -21,10 +21,6 @@ public class TurretBlueprint
     public GameObject thirdUpgradedPreFab;
     public int thirdUpgradeCost;
 
-    [Header("Hero level")]
-    public GameObject HeroPreFab;
-    public int HeroCost;
-
     public int GetSellAmount()
     {
         return cost / 2;
@@ -41,9 +37,4 @@ public class TurretBlueprint
     {
         return (cost + firstUpgradeCost + secondUpgradeCost + thirdUpgradeCost) / 2;
     }
-    public int GetSellHeroUpgradeAmount()
-    {
-        return (cost + firstUpgradeCost + secondUpgradeCost + thirdUpgradeCost + HeroCost) / 2;
-    }
-
 }
