@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 9f904c993c8435a49a1206153a6f9978
+guid: 1ca79a030b91e4340a395a4455c83acd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5910190812582364170
-    second: LogoOfBattalions_0
+      213: 2700659248116484388
+    second: LogoOfBattalionsRework_0
   - first:
-      213: 2418557154070607198
-    second: LogoOfBattalions_1
+      213: -37207524023720344
+    second: LogoOfBattalionsRework_1
   - first:
-      213: -1456278350687554247
-    second: LogoOfBattalions_2
+      213: 5078524049391266372
+    second: LogoOfBattalionsRework_2
   - first:
-      213: -8923362585429710193
-    second: LogoOfBattalions_3
+      213: 2612353072788305169
+    second: LogoOfBattalionsRework_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LogoOfBattalions_0
+      name: LogoOfBattalionsRework_0
       rect:
         serializedVersion: 2
         x: 4
@@ -141,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fb304df4c8cafda0800000000000000
-      internalID: -5910190812582364170
+      spriteID: 4294b57074baa7520800000000000000
+      internalID: 2700659248116484388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LogoOfBattalions_1
+      name: LogoOfBattalionsRework_1
       rect:
         serializedVersion: 2
         x: 1126
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55bb55eae0709120800000000000000
-      internalID: 2418557154070607198
+      spriteID: 866289b34ffcb7ff0800000000000000
+      internalID: -37207524023720344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LogoOfBattalions_2
+      name: LogoOfBattalionsRework_2
       rect:
         serializedVersion: 2
         x: 0
@@ -183,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9353d254e824acbe0800000000000000
-      internalID: -1456278350687554247
+      spriteID: 44aae3b37ba8a7640800000000000000
+      internalID: 5078524049391266372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LogoOfBattalions_3
+      name: LogoOfBattalionsRework_3
       rect:
         serializedVersion: 2
         x: 1147
@@ -204,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8a637da109d92480800000000000000
-      internalID: -8923362585429710193
+      spriteID: 11572736741f04420800000000000000
+      internalID: 2612353072788305169
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 7b599bc27ae97794d85c287ba833b45a
     internalID: 0
     vertices: []
     indices: 

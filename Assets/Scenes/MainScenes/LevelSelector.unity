@@ -1491,10 +1491,10 @@ RectTransform:
   m_Father: {fileID: 1033994567}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -762, y: 429}
-  m_SizeDelta: {x: 200, y: 114.885}
+  m_AnchorMin: {x: 0.049437504, y: 0.8397778}
+  m_AnchorMax: {x: 0.1584375, y: 0.95355564}
+  m_AnchoredPosition: {x: -1.5, y: 0.5}
+  m_SizeDelta: {x: -9, y: -8.11499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770815376
 MonoBehaviour:
@@ -3531,7 +3531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 616672381681009852, guid: fd65ac2f08f06f8489aeb77fc5b85ebc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: MainLevel
+      value: ReworkLevel
       objectReference: {fileID: 0}
     - target: {fileID: 616672381681009852, guid: fd65ac2f08f06f8489aeb77fc5b85ebc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

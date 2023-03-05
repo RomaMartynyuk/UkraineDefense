@@ -136,8 +136,8 @@ MonoBehaviour:
   enemyTag: Enemy
   bulletPrefab: {fileID: 4006839277816326301, guid: fab44f4dfadb58443b7b53a9e5c942fe, type: 3}
   firepoint: {fileID: 8788275425014873204}
-  nameInUa: "\u0417\u0421\u0423"
-  nameInEng: MoF
+  nameInUa: "\u0417\u0421\u0423 \u0406\u0406"
+  nameInEng: "MoF \u0406\u0406"
   damageFromBullet: 5
   fireRate: 1
   range: 15
