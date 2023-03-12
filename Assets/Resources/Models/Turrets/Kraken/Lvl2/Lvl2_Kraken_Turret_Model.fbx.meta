@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 4d75711d951087e46a8913bcdef83c73
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -604285407660509477
+    second: "Ko\u015Bci szturmowiec 1.012|BayraktarFlight"
+  - first:
+      74: 4744626677330006088
+    second: "Ko\u015Bci szturmowiec 1.012|GunShoot"
+  - first:
+      74: -5934633386765150434
+    second: "Ko\u015Bci szturmowiec 1.012|GunShoot.001"
+  - first:
+      74: 6115006178176924134
+    second: "Ko\u015Bci szturmowiec 1.012|Javelin"
+  - first:
+      74: 7965788756598704121
+    second: "Ko\u015Bci szturmowiec 1.012|JavelinShoot"
+  - first:
+      74: 9037288665064208769
+    second: "Ko\u015Bci szturmowiec 1.012|KostieShoot"
+  - first:
+      74: 5114179130036712994
+    second: "Ko\u015Bci szturmowiec 1.012|KostieShoot.001"
+  - first:
+      74: -1966585161088067522
+    second: "Ko\u015Bci szturmowiec 1.012|KostieShoot.002"
+  - first:
+      74: 4277565784163732395
+    second: "Ko\u015Bci szturmowiec 1.012|KostieShoot.003"
+  - first:
+      74: -183719903804032636
+    second: "Ko\u015Bci szturmowiec 1.012|KostieShoot.004"
+  - first:
+      74: -7010544584950969591
+    second: "Ko\u015Bci szturmowiec 1.012|KostieShoot.006"
+  - first:
+      74: -577529123437802077
+    second: "Ko\u015Bci szturmowiec 1.012|KrakenShoot"
+  - first:
+      74: -4925418405295248247
+    second: "Ko\u015Bci szturmowiec 1.012|KrakenShoot.001"
+  - first:
+      74: -3741760860421875241
+    second: "Ko\u015Bci szturmowiec 1.012|KrakenShoot.002"
+  - first:
+      74: -1913116995194352014
+    second: "Ko\u015Bci szturmowiec 1.012|Panzerfaust"
+  - first:
+      74: 330482249325412486
+    second: "Ko\u015Bci szturmowiec 1.012|PulemetStart"
+  - first:
+      74: 8627312310414002960
+    second: "Ko\u015Bci szturmowiec 1.012|PulemetStartLVL3"
+  - first:
+      74: -8117602307461860407
+    second: "Ko\u015Bci szturmowiec 1.012|PulemetStartLVL3.001"
+  - first:
+      74: -1328213880698052306
+    second: "Ko\u015Bci szturmowiec 1.012|PulemetStartLVL3.002"
+  - first:
+      74: 1907310596943589929
+    second: "Ko\u015Bci szturmowiec 1.012|RPGShoot"
+  - first:
+      74: 2518765129135195026
+    second: "Ko\u015Bci szturmowiec 1.012|RVG-90"
+  - first:
+      74: -243533823177234052
+    second: "Ko\u015Bci szturmowiec 1.012|Sniper"
+  - first:
+      74: -5756060939563640274
+    second: "Ko\u015Bci szturmowiec 1.012|Sniper.001"
+  - first:
+      74: 2950100756975502497
+    second: "Ko\u015Bci szturmowiec 1.012|Sniper.002"
+  - first:
+      74: -867338805400821388
+    second: "Ko\u015Bci szturmowiec 1.012|Sniper.004"
+  - first:
+      74: 2799230211465150679
+    second: "Ko\u015Bci szturmowiec 1.012|SniperGun"
+  - first:
+      74: 8477584130894442470
+    second: "Ko\u015Bci szturmowiec 1.012|SniperGun.001"
+  - first:
+      74: 6866900243756727511
+    second: "Ko\u015Bci szturmowiec 1.012|SniperGun.002"
+  - first:
+      74: -1456261784121614821
+    second: "Ko\u015Bci szturmowiec 1.012|StartMinigan"
+  - first:
+      74: 274545854567480417
+    second: "Ko\u015Bci szturmowiec 1.012|StartPulemetShoot"
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: "Ko\u015Bci szturmowiec 1.012|KrakenShoot.001"
+      takeName: "Ko\u015Bci szturmowiec 1.012|KrakenShoot.001"
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

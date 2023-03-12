@@ -75,6 +75,8 @@ public class Turret : MonoBehaviour
     {
         if(fireCountdown <= 0f)
         {
+            animator.SetTrigger("ShootAnim");
+            gunanim.SetTrigger("GunAnim");
             Shoot();
             fireCountdown = 1f / fireRate;
         }
@@ -82,8 +84,6 @@ public class Turret : MonoBehaviour
     }
     void Shoot()
     {
-        animator.SetTrigger("ShootAnim");
-        gunanim.SetTrigger("GunAnim");
         GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
