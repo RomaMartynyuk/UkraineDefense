@@ -22,10 +22,14 @@ public class GameOverUI : MonoBehaviour
     }
     public void Retry()
     {
+        Time.timeScale = 1f;
+        WaveSpawner.enemiesAlive = 0;
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }
     public void GoToMenu()
     {
+        Time.timeScale = 1f;
+        WaveSpawner.enemiesAlive = 0;
         sceneFader.FadeTo(menuSceneName);
     }
 }

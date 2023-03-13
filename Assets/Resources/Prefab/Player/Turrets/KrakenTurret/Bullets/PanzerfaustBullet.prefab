@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   damage: 10
-  bulletEffect: {fileID: 8845714974490348095, guid: 54846c7355c0c514699af14e2dea7f69, type: 3}
+  bulletEffect: {fileID: 7180856721318491175, guid: b6573fe734671744a8ca04a623f5ce5f, type: 3}
   explosionRadius: 10
 --- !u!1001 &1151164990228735571
 PrefabInstance:

@@ -12,12 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScenes/LevelSelector.unity
     guid: cb15ef23909e17a4c9c48581188f2da1
   - enabled: 1
+    path: Assets/Scenes/MainScenes/Collection.unity
+    guid: 9b30c26bd60879b4f9e741c5f0624700
+  - enabled: 1
     path: Assets/Scenes/Season-1/DemostrateLevel.unity
     guid: 60d70471caf409248bc5ded6d8910535
   - enabled: 0
     path: Assets/Scenes/Season-1/MainLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/MainScenes/Collection.unity
-    guid: 9b30c26bd60879b4f9e741c5f0624700
   m_configObjects: {}

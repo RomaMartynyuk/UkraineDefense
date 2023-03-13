@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 10
   enemyTag: Enemy
-  bulletPrefab: {fileID: 8399302899131172132, guid: 0567f626596fba94290af9917acee824, type: 3}
+  bulletPrefab: {fileID: 6733298780360249354, guid: 32902adea162b6b42a6ff1d6c9485c91, type: 3}
   firepoint: {fileID: 6675855070806006611}
   nameInUa: "\u041A\u0440\u0430\u043A\u0435\u043D I"
   nameInEng: Kraken I
