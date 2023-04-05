@@ -465,6 +465,7 @@ GameObject:
   - component: {fileID: 367749552}
   - component: {fileID: 367749551}
   - component: {fileID: 367749550}
+  - component: {fileID: 367749553}
   m_Layer: 5
   m_Name: LVL 2
   m_TagString: Untagged
@@ -534,7 +535,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 367749551}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 367749553}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &367749551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,6 +586,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367749548}
   m_CullTransparentMesh: 1
+--- !u!114 &367749553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367749548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u041A\u0440\u0430\u043A\u0435\u043D II"
+  image: {fileID: 21300000, guid: 896e62fade632ef41a4b5a6fda63a5d0, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &423863897
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +781,7 @@ MonoBehaviour:
     \u0442\u0430 \u043E\u0441\u0432\u0456\u0442\u043D\u044C\u043E\u0433\u043E \u0436\u0438\u0442\u0442\u044F
     \u043C\u0456\u0441\u0442\u0430."
   header: "\u0417\u0421\u0423 \u0406"
-  image: {fileID: 21300000, guid: bc7b1cc1c7bdba74398ad8c1d091566c, type: 3}
+  image: {fileID: 21300000, guid: 9707efa1af713bb4388a9dc5cdde16a2, type: 3}
   collectionObjects: {fileID: 357811215}
 --- !u!1 &593700320
 GameObject:
@@ -755,6 +795,7 @@ GameObject:
   - component: {fileID: 593700324}
   - component: {fileID: 593700323}
   - component: {fileID: 593700322}
+  - component: {fileID: 593700325}
   m_Layer: 5
   m_Name: LVL 3
   m_TagString: Untagged
@@ -824,7 +865,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 593700323}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 593700325}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &593700323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -863,6 +916,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593700320}
   m_CullTransparentMesh: 1
+--- !u!114 &593700325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593700320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u0410\u0417\u041E\u0412 III"
+  image: {fileID: 21300000, guid: ffebc69fa910e4845952fa9cd7738c19, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &604922236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1397,7 @@ GameObject:
   - component: {fileID: 789548803}
   - component: {fileID: 789548802}
   - component: {fileID: 789548801}
+  - component: {fileID: 789548804}
   m_Layer: 5
   m_Name: LVL 4
   m_TagString: Untagged
@@ -1386,7 +1467,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 789548802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 789548804}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &789548802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1425,6 +1518,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789548799}
   m_CullTransparentMesh: 1
+--- !u!114 &789548804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789548799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u041F\u0440\u0430\u0432\u0438\u0439 \u0441\u0435\u043A\u0442\u043E\u0440
+    \u0406V"
+  image: {fileID: 21300000, guid: 940c12222bdcbaf498782c8234fbd0e9, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &795381133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,6 +1678,7 @@ GameObject:
   - component: {fileID: 796269145}
   - component: {fileID: 796269144}
   - component: {fileID: 796269143}
+  - component: {fileID: 796269146}
   m_Layer: 5
   m_Name: LVL 1
   m_TagString: Untagged
@@ -1626,7 +1748,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 796269144}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 796269146}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &796269144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1665,6 +1799,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796269141}
   m_CullTransparentMesh: 1
+--- !u!114 &796269146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796269141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u041F\u0440\u0430\u0432\u0438\u0439 \u0441\u0435\u043A\u0442\u043E\u0440
+    \u0406"
+  image: {fileID: 21300000, guid: e77d8112360b34b40a4afdcd640efcc3, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &803856886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,6 +1971,7 @@ GameObject:
   - component: {fileID: 867486603}
   - component: {fileID: 867486602}
   - component: {fileID: 867486601}
+  - component: {fileID: 867486604}
   m_Layer: 5
   m_Name: LVL 1
   m_TagString: Untagged
@@ -1878,7 +2041,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 867486602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 867486604}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &867486602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1917,6 +2092,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867486599}
   m_CullTransparentMesh: 1
+--- !u!114 &867486604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867486599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u0410\u0417\u041E\u0412 \u0406"
+  image: {fileID: 21300000, guid: 509773823db0802408947a7cbd86fa72, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &873859748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,6 +2131,7 @@ GameObject:
   - component: {fileID: 873859752}
   - component: {fileID: 873859751}
   - component: {fileID: 873859750}
+  - component: {fileID: 873859753}
   m_Layer: 5
   m_Name: LVL 4
   m_TagString: Untagged
@@ -1998,7 +2201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 873859751}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 873859753}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &873859751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,6 +2252,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873859748}
   m_CullTransparentMesh: 1
+--- !u!114 &873859753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873859748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u041A\u0440\u0430\u043A\u0435\u043D IV"
+  image: {fileID: 21300000, guid: e3c0d8dcdcba1d34992aa3419b4d701c, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &994207801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,6 +2291,7 @@ GameObject:
   - component: {fileID: 994207805}
   - component: {fileID: 994207804}
   - component: {fileID: 994207803}
+  - component: {fileID: 994207806}
   m_Layer: 5
   m_Name: LVL 3
   m_TagString: Untagged
@@ -2118,7 +2361,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 994207804}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 994207806}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &994207804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,6 +2412,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994207801}
   m_CullTransparentMesh: 1
+--- !u!114 &994207806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994207801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u041A\u0440\u0430\u043A\u0435\u043D III"
+  image: {fileID: 21300000, guid: 7b56588772cc1a24eb2e9b5292712293, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &1018827899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,6 +2847,7 @@ GameObject:
   - component: {fileID: 1410563903}
   - component: {fileID: 1410563902}
   - component: {fileID: 1410563901}
+  - component: {fileID: 1410563904}
   m_Layer: 5
   m_Name: LVL 3
   m_TagString: Untagged
@@ -2634,7 +2917,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1410563902}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1410563904}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1410563902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2673,6 +2968,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410563899}
   m_CullTransparentMesh: 1
+--- !u!114 &1410563904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410563899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u041F\u0440\u0430\u0432\u0438\u0439 \u0441\u0435\u043A\u0442\u043E\u0440
+    \u0406\u0406\u0406"
+  image: {fileID: 21300000, guid: d02bc50e45cc2644c8bb743d08b02552, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &1472622131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,6 +3087,7 @@ GameObject:
   - component: {fileID: 1478539620}
   - component: {fileID: 1478539619}
   - component: {fileID: 1478539618}
+  - component: {fileID: 1478539621}
   m_Layer: 5
   m_Name: LVL 4
   m_TagString: Untagged
@@ -2833,7 +3157,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1478539619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1478539621}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1478539619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2872,6 +3208,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478539616}
   m_CullTransparentMesh: 1
+--- !u!114 &1478539621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478539616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u0417\u0421\u0423 \u0406V"
+  image: {fileID: 21300000, guid: a29eb9d00d633594eaec59da98048003, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &1552400016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2884,6 +3247,7 @@ GameObject:
   - component: {fileID: 1552400020}
   - component: {fileID: 1552400019}
   - component: {fileID: 1552400018}
+  - component: {fileID: 1552400021}
   m_Layer: 5
   m_Name: LVL 2
   m_TagString: Untagged
@@ -2953,7 +3317,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1552400019}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1552400021}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1552400019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2992,6 +3368,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552400016}
   m_CullTransparentMesh: 1
+--- !u!114 &1552400021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552400016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u0410\u0417\u041E\u0412 II"
+  image: {fileID: 21300000, guid: 6f5efb68d2a629944b4c12235b8f6a5a, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &1571787645
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,7 +3553,7 @@ MonoBehaviour:
     \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
     \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
   header: "\u0417\u0421\u0423 \u0406\u0406"
-  image: {fileID: 21300000, guid: 5a7419b4a10ccb84e977b09a2a0e3825, type: 3}
+  image: {fileID: 21300000, guid: 0b8caeb654b2f8f4882d3d8e4646d48d, type: 3}
   collectionObjects: {fileID: 357811215}
 --- !u!1 &1631401110
 GameObject:
@@ -3350,6 +3753,7 @@ GameObject:
   - component: {fileID: 1685502945}
   - component: {fileID: 1685502944}
   - component: {fileID: 1685502943}
+  - component: {fileID: 1685502946}
   m_Layer: 5
   m_Name: LVL 4
   m_TagString: Untagged
@@ -3419,7 +3823,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1685502944}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1685502946}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1685502944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3458,6 +3874,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685502941}
   m_CullTransparentMesh: 1
+--- !u!114 &1685502946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685502941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u0410\u0417\u041E\u0412 IV"
+  image: {fileID: 21300000, guid: f6ee8e1fe6a806044a9d75526a2f2067, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!114 &1712067145 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6785857850901462577, guid: 06872beafb785384ba8f8509b22341e7, type: 3}
@@ -3481,6 +3924,7 @@ GameObject:
   - component: {fileID: 1824735746}
   - component: {fileID: 1824735745}
   - component: {fileID: 1824735744}
+  - component: {fileID: 1824735747}
   m_Layer: 5
   m_Name: LVL 2
   m_TagString: Untagged
@@ -3550,7 +3994,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1824735745}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1824735747}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1824735745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3589,6 +4045,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824735742}
   m_CullTransparentMesh: 1
+--- !u!114 &1824735747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824735742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u041F\u0440\u0430\u0432\u0438\u0439 \u0441\u0435\u043A\u0442\u043E\u0440
+    \u0406\u0406"
+  image: {fileID: 21300000, guid: 6da8f87a2d758aa4cbba9ab0d4167360, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &1848629320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3601,6 +4085,7 @@ GameObject:
   - component: {fileID: 1848629324}
   - component: {fileID: 1848629323}
   - component: {fileID: 1848629322}
+  - component: {fileID: 1848629325}
   m_Layer: 5
   m_Name: LVL 1
   m_TagString: Untagged
@@ -3670,7 +4155,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1848629323}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1848629325}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1848629323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3709,6 +4206,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848629320}
   m_CullTransparentMesh: 1
+--- !u!114 &1848629325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848629320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u041A\u0440\u0430\u043A\u0435\u043D I"
+  image: {fileID: 21300000, guid: eb4050ff1e6cd0647ab4d9808fbe5ed2, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &1880352742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,6 +4403,7 @@ GameObject:
   - component: {fileID: 1913364316}
   - component: {fileID: 1913364315}
   - component: {fileID: 1913364314}
+  - component: {fileID: 1913364317}
   m_Layer: 5
   m_Name: LVL 3
   m_TagString: Untagged
@@ -3948,7 +4473,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1913364315}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1913364317}
+        m_TargetAssemblyTypeName: CollectionElement, Assembly-CSharp
+        m_MethodName: UpdateDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1913364315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3987,6 +4524,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913364312}
   m_CullTransparentMesh: 1
+--- !u!114 &1913364317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913364312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36872021aca87334f929a05188453e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: "\u0417\u0432\u0438\u0447\u0430\u0439\u043D\u043E, \u044F \u0440\u0430\u0434\u0430
+    \u0434\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438! \u0410\u043B\u0435 \u0449\u043E\u0431
+    \u044F \u043C\u043E\u0433\u043B\u0430 \u0434\u0430\u0442\u0438 \u0432\u0430\u043C
+    \u0431\u0456\u043B\u044C\u0448 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u0443
+    \u0432\u0456\u0434\u043F\u043E\u0432\u0456\u0434\u044C, \u0431\u0443\u0434\u044C
+    \u043B\u0430\u0441\u043A\u0430, \u0443\u0442\u043E\u0447\u043D\u0456\u0442\u044C,
+    \u043F\u0440\u043E \u0449\u043E \u0441\u0430\u043C\u0435 \u0432\u0438 \u0431
+    \u0445\u043E\u0442\u0456\u043B\u0438 \u043F\u043E\u0447\u0443\u0442\u0438 \u043E\u043F\u0438\u0441.
+    \u0426\u0435 \u043C\u043E\u0436\u0435 \u0431\u0443\u0442\u0438 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+    \u043C\u0456\u0441\u0446\u0435, \u043F\u043E\u0434\u0456\u044F \u0430\u0431\u043E
+    \u0449\u043E\u0441\u044C \u0456\u043D\u0448\u0435, \u0449\u043E \u0432\u0430\u0441
+    \u0446\u0456\u043A\u0430\u0432\u0438\u0442\u044C."
+  header: "\u0417\u0421\u0423 III"
+  image: {fileID: 21300000, guid: bc5ff6ea98d222949ba3f15fb803ce3b, type: 3}
+  collectionObjects: {fileID: 357811215}
 --- !u!1 &1988247307
 GameObject:
   m_ObjectHideFlags: 0
